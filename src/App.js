@@ -5,7 +5,8 @@ import { Route, Routes } from "react-router-dom";
 
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
-import RecordList from "./components/recordList";
+///import RecordList from "./components/recordList";
+import StockList from "./components/stockList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 
@@ -14,11 +15,11 @@ const App = () => {
     <div>
       <Navbar />
       <div style={{ margin: 20 }}>
-      <Routes>
-        <Route exact path="/" element={<RecordList />} />
-        <Route path="/edit/:id" element={<Edit />} />
-        <Route path="/create" element={<Create />} />
-      </Routes>
+        <Routes>
+          <Route exact path="/" element={<StockList />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/create" element={<Create />} />
+        </Routes>
       </div>
     </div>
   );
