@@ -9,6 +9,8 @@ const Stock = (props) => (
     <td>{props.stock.product}</td>
     <td>{props.stock.BUY_DECISION}</td>
     <td>{props.stock.rating}</td>
+    <td>{props.stock.Close}</td>
+    <td>{props.stock.Volume}</td>
     {/* 
     <td>
       <Link className="btn btn-link" to={`/edit/${props.stock._id}`}>
@@ -89,6 +91,8 @@ export default function StockList() {
             <th>Product</th>
             <th>Buy Decision</th>
             <th>Rating</th>
+            <th>Close</th>
+            <th>Volume</th>
           </tr>
         </thead>
         <tbody>{stockList()}</tbody>
